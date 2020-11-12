@@ -138,6 +138,17 @@ The read-write lock permits concurrent reads and exclusive writes to a protected
   
 # BASICS 
 
+## Mac
+
+### Compile 
+
+`make myprogram.cpp`
+
+### run 
+
+`./myprogram.cpp`
+
+
 ## Class definition
 
 ![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Classes-and-Objects-in-C.png)
