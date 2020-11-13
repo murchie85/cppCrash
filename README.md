@@ -16,20 +16,22 @@ then you don't need to do things like `std::cout` just `cout`
 # Quick functions
 
 
-## GET INPUT 
+## String functions 
+
+`string mystring = "Adam";`     
+`mystring.len()`  
+`mystring.find("d",0);`  
+`mystring.substr(1,3);`    
+
+## GET INPUT VS STRING INPUT
   
 ```cpp
+
 cin >> age 
-```
-  
-## get STRING INPUT
+cout << age ;
 
-```cpp 
-
-
+// get string input 
 getline(cin,name);
-// input, var
-
 cout << "hello " << name;
 
 ```
@@ -215,15 +217,35 @@ cout << "My name is " << characterName << "\n";
 
 ```
 
-## String functions 
+## Strings
 
+```cpp
+
+int main(){
+
+	// S T R I N G S 
+
+	string greeting = "hello";
+
+	cout << greeting.length();
+	cout << greeting[0];
+	cout << greeting.find("llo") << endl;
+	cout << greeting.substr(2) << endl;
+	cout << greeting.substr(1,3) << endl; 
+	
+
+	return 0;
+
+}
+
+```
+**Functions** 
 `string mystring = "Adam";`     
-
 `mystring.len()`  
-  
 `mystring.find("d",0);`  
-
 `mystring.substr(1,3);`  
+
+
 
 
 
