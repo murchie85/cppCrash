@@ -2,16 +2,27 @@
 
 ![](https://engineering.fb.com/wp-content/uploads/2015/06/1522635669452_11.jpg)
 
-  
+# Quick Tips 
+
+if you include:   
+
+`using  namespace std;`
+    
+then you don't need to do things like `std::cout` just `cout`  
+
+   
+
+
+# Quick functions
+
 
 ## GET INPUT 
-
+  
 ```cpp
 cin >> age 
 ```
   
-## get string input 
-
+## get STRING INPUT
 
 ```cpp 
 
@@ -22,7 +33,41 @@ getline(cin,name);
 cout << "hello " << name;
 
 ```
+## Console out 
+```cpp
+cout << "My name is " << characterName << endl;
+```
+  
 
+# POINTERS 
+
+```cpp
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+/// -----------------USING POINTERS 
+int main(){
+
+	int num = 10;
+	cout << &num << endl; // get address 
+
+	int *pNum = &num;  // reference Pointer = address of num var
+
+	cout << pNum  << endl; // Prins out the saved pointer 
+	cout << *pNum << endl; // Actually prints out the physical pointed value 
+
+	return 0;
+
+
+	// POINTER IS JUST A VARIABLE THAT ALLOWS YOU TO STORE AN ADDRESS 
+
+
+}
+
+
+```
 
 
 # ARRAYS 
@@ -182,6 +227,36 @@ cout << "My name is " << characterName << "\n";
 
 
 
+## Variables 
+
+```cpp 
+
+
+string name    = "Mike";
+char testGrade = 'A';
+
+
+// Numbers 
+
+int age = 20;   //  16 bit signed 
+short age = 10; // 16 bit at least signed 
+long age = 44; // at least 32 bit  signed 
+long long age 40; // at least 64 bit signed
+
+
+
+bool isHungry;    // true/false 
+isTall = true;
+
+```
+
+## Casting 
+
+```cpp 
+
+int volume = 10.2; // double 
+
+cout << (int)volume 
 
 
 	
