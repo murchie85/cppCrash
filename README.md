@@ -40,33 +40,41 @@ cout << "hello " << name;
 cout << "My name is " << characterName << endl;
 ```
   
+# VECTOR 
 
-# POINTERS 
+
+A dynamic array you don't need to populate up front.  
 
 ```cpp
 
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
+int main()
+{
 
-/// -----------------USING POINTERS 
-int main(){
+	// VECTOR 
 
-	int num = 10;
-	cout << &num << endl; // get address 
+	vector<string> friends;
 
-	int *pNum = &num;  // reference Pointer = address of num var
+	friends.push_back("Oscar");
+	friends.push_back("Angela");
+	friends.push_back("Kevin");
+	friends.insert(friends.begin() + 1, "Jim");
 
-	cout << pNum  << endl; // Prins out the saved pointer 
-	cout << *pNum << endl; // Actually prints out the physical pointed value 
+	// friends.erase(friends.begin() + 1);	
+
+	cout << friends.at(0) << endl;
+	cout << friends.at(1) << endl;
+	cout << friends.at(2) << endl;
+	cout << friends.size() << endl;
 
 	return 0;
 
 
-	// POINTER IS JUST A VARIABLE THAT ALLOWS YOU TO STORE AN ADDRESS 
-
-
 }
+
 
 
 ```
@@ -137,6 +145,39 @@ int main(){
 }
 
 ```
+
+
+# POINTERS 
+
+```cpp
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+/// -----------------USING POINTERS 
+int main(){
+
+	int num = 10;
+	cout << &num << endl; // get address 
+
+	int *pNum = &num;  // reference Pointer = address of num var
+
+	cout << pNum  << endl; // Prins out the saved pointer 
+	cout << *pNum << endl; // Actually prints out the physical pointed value 
+
+	return 0;
+
+
+	// POINTER IS JUST A VARIABLE THAT ALLOWS YOU TO STORE AN ADDRESS 
+
+
+}
+
+
+```
+
+
 
 ### functions 
 
