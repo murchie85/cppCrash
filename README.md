@@ -3,18 +3,34 @@
 ![](https://engineering.fb.com/wp-content/uploads/2015/06/1522635669452_11.jpg)
 
 # Quick Tips 
+   
+- Return type for functions probably best to be `void` as it doesn't expect a return type.
 
+## Referencing and header files 
+  
 if you include:   
 
 `using  namespace std;`
     
-then you don't need to do things like `std::cout` just `cout`  
+then you don't need to do things like `std::cout` just `cout`    
+  
+- If your function is below `main` or in another folder you should specify it in the include section i.e. 
+ 
+```cpp
+#include <string>
+using namespace std;
+int addNumbers(int num1, int num2);
+
+```
+  
+Alternatively you can include header files :     
+- Add the function declaration (just function header no body in the .h file  
+- Reference the .h file in your code i.e `#include log.h`  
+
 
    
-
-
 # Quick functions
-
+ 
 
 ## String functions 
 
@@ -43,15 +59,7 @@ cout << "My name is " << characterName << endl;
 # NOTES
 
 
-1. Return type for functions probably best to be `void` as it doesn't expect a return type.
-2. If your function is below `main` or in another folder you should specify it in the include section i.e. 
- 
-```cpp
-#include <string>
-using namespace std;
-int addNumbers(int num1, int num2);
 
-```
 
 
 
