@@ -39,7 +39,22 @@ cout << "hello " << name;
 ```cpp
 cout << "My name is " << characterName << endl;
 ```
-  
+
+# NOTES
+
+
+1. Return type for functions probably best to be `void` as it doesn't expect a return type.
+2. If your function is below `main` or in another folder you should specify it in the include section i.e. 
+ 
+```cpp
+#include <string>
+using namespace std;
+int addNumbers(int num1, int num2);
+
+```
+
+
+
 # VECTOR 
 
 
