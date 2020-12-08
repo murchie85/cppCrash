@@ -6,7 +6,11 @@
    
 - Return type for functions probably best to be `void` as it doesn't expect a return type.
 
-## Referencing and header files 
+## INCLUDE, REFERENCING 
+
+- `#include "../log.h"`  // (Best use for everything) Relative to current file
+- `#include <log.h>`     // ()Does not need to be relative
+
   
 if you include:   
 
@@ -25,7 +29,18 @@ int addNumbers(int num1, int num2);
   
 Alternatively you can include header files :     
 - Add the function declaration (just function header no body in the .h file  
-- Reference the .h file in your code i.e `#include log.h`  
+- Reference the .h file in your code i.e `#include log.h`   
+- Ensure `#pragma once` is included as  it will fail to compile where duplicate lines exist especially with structs etc  
+- Alternatively in your logfile, you can check if something has been defined already   
+```cpp
+#ifndef _LOG_H
+#define _LOG_H  
+
+void initLog();
+
+
+#endif
+```
 
 
    
